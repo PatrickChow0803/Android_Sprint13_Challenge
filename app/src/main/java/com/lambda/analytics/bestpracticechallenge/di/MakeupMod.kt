@@ -1,10 +1,12 @@
 package com.lambda.analytics.bestpracticechallenge.di
 
+import com.lambda.analytics.bestpracticechallenge.retrofit.ApiInterface
 import dagger.Module
 import dagger.Provides
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
+import retrofit2.create
 
 @Module
 object MakeupMod {
