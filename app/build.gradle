@@ -4,6 +4,8 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
 
+apply plugin: 'kotlin-kapt'
+
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
@@ -35,7 +37,10 @@ dependencies {
 
 
     // Recycler View
-    implementation 'androidx.recyclerview:recyclerview:1.1.0-beta05'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0-rc01'
+
+    // Picasso
+    implementation 'com.squareup.picasso:picasso:2.71828'
 
     // Card View
     implementation 'androidx.cardview:cardview:1.0.0'
@@ -50,6 +55,7 @@ dependencies {
     // explicitly depend on RxJava's latest version for bug fixes and new features.
     // (see https://github.com/ReactiveX/RxJava/releases for latest 2.x.x version)
     implementation 'io.reactivex.rxjava2:rxjava:2.2.10'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.6.2'
 
     implementation 'com.jakewharton.rxbinding3:rxbinding:3.0.0'
     implementation("io.reactivex.rxjava2:rxkotlin:2.4.0")
