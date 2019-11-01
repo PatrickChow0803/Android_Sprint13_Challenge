@@ -11,7 +11,7 @@ import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.makeup_item.view.*
 
 class MakeupAdapter(private val makeupList: List<Makeup>) : RecyclerView.Adapter<MakeupAdapter.ViewHolder>() {
-    
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.makeup_item, parent, false)
         return ViewHolder(view)
